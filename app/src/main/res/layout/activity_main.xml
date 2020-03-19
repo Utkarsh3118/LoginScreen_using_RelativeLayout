@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/LoginImg"
+        android:scaleType="fitXY"
+        android:id="@+id/iv"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv"
+        android:text="Welcome Back !"
+        android:layout_margin="@dimen/five"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/tv_Welcome_back"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Welcome_back"
+        android:text="Username/Email"
+        android:textSize="18sp"
+        android:layout_marginTop="60dp"
+        android:padding="@dimen/five"
+        android:id="@+id/tv_Username_Email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Username_Email"
+        android:layout_margin="@dimen/five"
+        android:background="@drawable/edittext_round"
+        android:padding="@dimen/twenty"
+        android:hint="@string/enter_username"
+        android:id="@+id/et_enter_username"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_enter_username"
+        android:textSize="18sp"
+        android:text="Password"
+        android:layout_marginTop="@dimen/five"
+        android:padding="@dimen/five"
+        android:id="@+id/password"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_enter_username"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:layout_margin="@dimen/five"
+        android:padding="@dimen/five"
+        android:textColor="@color/colorPrimary"
+        android:text="Forgot Password"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:padding="@dimen/twenty"
+        android:background="@drawable/edittext_round"
+        android:layout_margin="@dimen/five"
+        android:hint="@string/enter_password"
+        android:id="@+id/enter_password"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_password"
+        android:background="@drawable/button_editor_round"
+        android:text="Login"
+        android:layout_margin="@dimen/thirty"
+        android:padding="@dimen/five"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:id="@+id/Login"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login"
+        android:text="Don't have an Account ? Create an Account"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+
+
+
+</RelativeLayout>
